@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+
+    android:paddingRight="20dp"
+    tools:context=".MainActivity"
+    android:background="#E6DFDF"
+    >
+
+
+    <EditText
+        android:id="@+id/NameFiled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_edittext"
+        android:hint="USERNAME"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/PasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NameFiled"
+        android:layout_marginTop="15dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordField"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        />
+
+    <TextView
+        android:id="@+id/ForgtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordField"
+        android:text="ForgetPasswrod?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/msgSignUp"
+        android:text="You dont Hava Account Already?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Manmona"
+        android:id="@+id/btnMon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMon"
+        android:layout_below="@+id/btnMon"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="32dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>
